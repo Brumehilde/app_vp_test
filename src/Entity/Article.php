@@ -8,7 +8,9 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Entity(repositoryClass="App\Repository\ArticleRepository")
  */
 class Article
-{
+{   // Entity Article correspondant au model si  pas de requetes personnalisé (repository)
+    // AutoGeneration de l'id à la création de celui-ci
+
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()

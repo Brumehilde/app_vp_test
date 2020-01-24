@@ -14,35 +14,26 @@ use Doctrine\Common\Persistence\ManagerRegistry;
  */
 class ArticleRepository extends ServiceEntityRepository
 {
+    // constructeur
     public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, Article::class);
     }
 
-
+    // Creation de la requete avec le querybuilder pour effectuer le trie par date ici le repository va servire de model pour le MVC
 
     /**
      * @return Article[] Returns an array of Article objects
      */
 
     public function filterByDate()
-    {    $qb = $this->createQueryBuilder('a')
-        ->addOrderBy('a.date', 'DESC');
-         $query = $qb->getQuery();
+    {
+        $qb = $this->createQueryBuilder('a')
+            ->addOrderBy('a.date', 'DESC');
+        $query = $qb->getQuery();
 
         return $query->execute();
     }
 
 
-    /*
-    public function findOneBySomeField($value): ?Article
-    {
-        return $this->createQueryBuilder('a')
-            ->andWhere('a.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
-    }
-    */
 }

@@ -16,6 +16,7 @@ class MainController extends AbstractController
      */
     public function index(ArticleRepository $articleRepository): Response
     {
+        // Appel de la methode filterbydate du repository d'article créer pour le classement par date DESC
         return $this->render('main/index.html.twig', [
             'articles' => $articleRepository->filterByDate(),
         ]);

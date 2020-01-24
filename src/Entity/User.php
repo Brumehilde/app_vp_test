@@ -9,7 +9,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 /**
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
  */
-class User implements UserInterface,Serializable
+class User implements UserInterface, Serializable
 {
     /**
      * @ORM\Id()
@@ -46,7 +46,7 @@ class User implements UserInterface,Serializable
      */
     public function getUsername(): string
     {
-        return (string) $this->username;
+        return (string)$this->username;
     }
 
     public function setUsername(string $username): self
@@ -80,7 +80,7 @@ class User implements UserInterface,Serializable
      */
     public function getPassword(): string
     {
-        return (string) $this->password;
+        return (string)$this->password;
     }
 
     public function setPassword(string $password): self
@@ -95,7 +95,7 @@ class User implements UserInterface,Serializable
      */
     public function getSalt()
     {
-        // not needed when using the "bcrypt" algorithm in security.yaml
+
     }
 
     /**
@@ -103,8 +103,7 @@ class User implements UserInterface,Serializable
      */
     public function eraseCredentials()
     {
-        // If you store any temporary, sensitive data on the user, clear it here
-        // $this->plainPassword = null;
+
     }
 
     /**
@@ -134,12 +133,12 @@ class User implements UserInterface,Serializable
      */
     public function unserialize($serialized)
     {
-        list( $this->id,
+        list($this->id,
             $this->username,
             $this->password,
             $this->roles
 
-            )=$this->unserialize($serialized,['allowed_classes'=>false]
+            ) = $this->unserialize($serialized, ['allowed_classes' => false]
         );
     }
 }

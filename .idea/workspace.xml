@@ -2,37 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55b5b4aa-f669-472a-9ef6-0187755e78ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/easy_admin.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/easy_admin.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200124091910.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/_delete_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/new.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/app_vp_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/app_vp_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArticleController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ArticleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ArticleType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/ArticleRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ArticleRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/menu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/menu.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -222,7 +206,7 @@
       <workItem from="1579853261849" duration="9406000" />
       <workItem from="1579864939094" duration="2209000" />
       <workItem from="1579868038051" duration="2321000" />
-      <workItem from="1579870921731" duration="8421000" />
+      <workItem from="1579870921731" duration="10669000" />
     </task>
     <servers />
   </component>
@@ -238,6 +222,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="686" y="344" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1579870548733" />
+    <state x="653" y="466" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1579882190044">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="653" y="466" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1579882190044" />
     <state x="713" y="355" key="NewPhpClassDialog" timestamp="1579871243343">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
