@@ -22,22 +22,20 @@
                     <span class="glyphicon glyphicon-home"></span>
                 </a>
 
+                <a class="nav-item nav-link" href="{{ path('article_index') }}">Gestion des Articles</a>
+                <a class="nav-item nav-link" href="{{ path('user_index') }}">Gestion des Users</a>
 
-                <a class="nav-item nav-link" href="{{ path('article_index') }}">Administration des Articles</a>
 
-                {#                {% if (is_granted('ROLE_USER')) %}#}
-                {#                    #}
+{#                                {% if (is_granted('ROLE_USER')) %}#}
 
-                {#                    <a class="nav-item nav-link" href="{{ path('user_index') }}">Utilisateurs</a>#}
-                {#                   #}
+{#                                   #}
 
-                {#                    #}
 
-                {#                    <a class="nav-item nav-link" href="{% if app.request.attributes.get('_route')=='logout' %}active{% endif %}">#}
-                {#                        <a class="nav-item nav-link" href="{{ path('logout') }}">Déconnexion</a></a>#}
-                {#                {% else %}#}
-                {#                    <a class="nav-item nav-link" href="{{ path('app_login') }}">Connexion</a>#}
-                {#                {% endif %}#}
+{#                                    <a class="nav-item nav-link" href="{% if app.request.attributes.get('_route')=='logout' %}active{% endif %}">#}
+{#                                        <a class="nav-item nav-link" href="{{ path('app_logout') }}">Déconnexion</a></a>#}
+{#                                {% else %}#}
+{#                                    <a class="nav-item nav-link" href="{{ path('app_login') }}">Connexion</a>#}
+{#                                {% endif %}#}
 
 
             </div>

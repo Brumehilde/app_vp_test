@@ -11,11 +11,13 @@ class MainController extends AbstractController
 {
     /**
      * @Route("/", name="main")
+     * @param ArticleRepository $articleRepository
+     * @return Response
      */
     public function index(ArticleRepository $articleRepository): Response
     {
         return $this->render('main/index.html.twig', [
-            'articles' => $articleRepository->findAll(),
+            'articles' => $articleRepository->filterByDate(),
         ]);
     }
 }
